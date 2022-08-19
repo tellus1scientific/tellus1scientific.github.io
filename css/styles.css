@@ -1,1 +1,183 @@
+*{
+	padding: 0;
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
+body{
+	font-family: Verdana, arial, sans-serif;
+	font-size: 12px;
+	background-color:#2050A0;
+	width: 100%;
+	height: 100%;
+}
+
+main{
+	background-color: white;
+	color: #2050A0;
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.6%;
+	margin-bottom: 1.6%;
+	height: 150vh;
+}
+
+.tellus1banner{
+	height: auto;
+	width: 100%;
+	padding: 8px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav{
+	margin: auto;
+	width: calc(100% - 16px);
+	height: 29px;
+	background-color: #2050A0;
+}
+
+nav ul{
+	width: 60%;
+
+	display: flex;
+	gap: 1px;
+	background-color: white;
+	flex-wrap: nowrap;
+	
+	height: 100%;
+	margin: auto;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li{
+	flex-grow: 1;
+	flex-shrink: 1;
+	text-align: center;
+	background-color: #2050A0;
+	display: flex;
+}
+
+nav ul li a{
+	flex: 0.9;
+	text-decoration: none;
+	color: white;
+	margin: auto;
+	font-weight: lighter;
+	padding: 5px;
+}
+
+nav ul li a:hover{
+	color: black;
+	background-color: white;
+}
+
+.maintext{
+	margin-left: 4.6%;
+	margin-right: 4.6%;
+}
+
+h1{
+	font-size: 200%;
+	color:#17397A;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 14px;
+	padding: 0;
+}
+
+p{
+	color: #333;
+	line-height: 21px;
+	margin: 0;
+	margin-top: 12px;
+	padding: 0;
+}
+
+a{
+	text-decoration: underline;
+	color: #17397A;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.maintext ul{
+	width: 88.5%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11.5px;
+	margin-bottom: 15px;
+}
+
+.maintext ul li{
+	color: black;
+	margin-bottom: 3.6px;
+}
+
+hr{
+	background-color: darkblue;
+	color:darkblue;
+	width: 96%;
+	height: 1px;
+}
+
+@media screen and (max-width: 1200px) {
+	body{
+		font-size: 11px;
+	}
+
+	nav ul{
+		width: 62.5%;
+	}
+
+	hr{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	main{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	nav ul{
+		width: 75%
+	}
+	body{
+		font-size: 10px;
+	}
+
+	hr{
+		width: 104%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	main{
+		width: 100%;
+		margin-top: 0;
+	}
+
+	nav{
+		width: 100%;
+	}
+
+	.tellus1banner{
+		padding: 2px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	nav ul{
+		flex-wrap: wrap;
+	}
+}
