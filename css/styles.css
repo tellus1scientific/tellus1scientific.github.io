@@ -7,7 +7,6 @@
 
 body{
 	font-family: Verdana, arial, sans-serif;
-	font-size: 12px;
 	background-color:#2050A0;
 	width: 100%;
 	height: 100%;
@@ -22,12 +21,13 @@ main{
 	margin-top: 1.6%;
 	margin-bottom: 1.6%;
 	height: 150vh;
+	font-size: 0.75rem;
 }
 
-.tellus1banner{
+.banner{
 	height: auto;
 	width: 100%;
-	padding: 8px;
+	padding: 0.5rem;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -128,9 +128,53 @@ hr{
 	height: 1px;
 }
 
+.ourteam{
+	list-style: none;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+.ourteam li{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.ourteamprofile{
+	width: 10rem;
+	height: 10rem;
+}
+
+.teammember{
+	text-align: center;
+}
+
+.teammember p{
+	margin: 0;
+	padding: 0;
+}
+
+.bijannemati{
+	list-style: none;
+}
+
+.profilepicture{
+	width: 12rem;
+	height: 10rem;
+	margin: 0;
+	padding: 0;
+}
+
+
 @media screen and (max-width: 1200px) {
 	body{
-		font-size: 11px;
+		font-size: 0.7rem;
 	}
 
 	nav ul{
@@ -153,11 +197,16 @@ hr{
 		width: 75%
 	}
 	body{
-		font-size: 10px;
+		font-size: 0.6rem;
 	}
 
 	hr{
 		width: 104%;
+	}
+
+	.ourteamprofile{
+		width: 8rem;
+		height: 8rem;
 	}
 }
 
